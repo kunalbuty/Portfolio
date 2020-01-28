@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kunal Buty</title>
+	<script src="functions.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+
+	<div class="banner" id="banner">
+		<div class="bannerText">
+			<h1 class="mainTitle">Welcome to my Website</h1>			
+		</div>
+	</div>
+	
+
+	
+	<table class="allTabs" id="tabs">
+		<tr>
+			<td class="tab">
+				<a>tab 1</a>
+			</td>
+			<td class="tab">
+				<a>tab 2</a>
+			</td>
+			<td class="tab">
+				<a>tab 3</a>
+			</td>
+			<td class="tab">
+				<a>tab 4</a>
+			</td>
+		</tr>
+	</table>
+	<div class="content">
+		<div class="segment1">
+			<img class="faceRound" src="Pictures/faceRound.png" height="300" width="300">
+			<p class="regularText">
+				The numbers refer to the Exercises at the bottom of each section of your zyBook. Complete these on paper and upload to Gradescope. Review the guidelines for homework on page "Grading and Assignments", under "Homework".  Justify all your answers.
+			</p>
+		</div>
+	</div>
+	<div class="temp">
+	</div>
+
+
+
+
+
+	<script type="text/javascript">
+		window_size = window.innerHeight-70 +"px";
+		document.getElementById("banner").style.height = window_size;
+
+		window.onscroll = function() {stick()};
+		var tabs = document.getElementById("tabs");
+		var sticky = tabs.offsetTop;
+		function stick() {
+			if (window.pageYOffset >= sticky) {
+			    tabs.classList.add("sticky")
+			  } else {
+			    tabs.classList.remove("sticky");
+			  }
+		}
+	</script>
+</body>
+</html>
