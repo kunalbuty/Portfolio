@@ -1,3 +1,21 @@
+@font-face {
+  font-family: typingFont;
+  src: url(Fonts/TravelingTypewriter.woff);
+}
+
+@font-face {
+  font-family: SugarDeath;
+  src: url(Fonts/SugarDeath2.woff);
+}
+
+@font-face {
+	font-family: 'Rush';
+	src: url('Fonts/Rush.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 html {
 	background-color:#bcf7cc;
 	margin: 0;
@@ -11,15 +29,39 @@ body {
     
 }
 .mainTitle {
-	font-size: 60px;
-	font-family: Helvetica;
-	color: white;
+	margin-left: 200px;
+	font-size: 80px;
+	font-family: SugarDeath;
+	color: teal;
+}
 
+.mainTitle #mainTitleVar {
+	overflow: hidden;
+	margin: 0 auto;
+	font-weight: normal;
+	font-size: 80px;
+	font-family: typingFont;
+	color: red;
+	border-right: 3px solid white;
+	animation: 
+		typing 3.5s steps(40, end),
+		blink-caret .75s step-end infinite;
+	white-space: nowrap;
+}
+
+/* The typing effect */
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+}
+
+@keyframes blink-caret {
+	from, to { border-color: transparent }
+	20% { border-color: white; }
 }
 
 .allTabs {
-	width:100%;
-	background-color: rgb(34, 34, 34);
+	width: 100%;
 	color:white;
 	z-index: 1;
 	padding: 0px;
@@ -42,6 +84,14 @@ body {
 	background-color: white;
 	color:rgb(34, 34, 34);
 	transition: 0.5s;
+}
+
+#logo {
+	text-decoration: none;
+	font-family: SugarDeath;
+	font-size: 40px;
+	color:teal;
+	text-align: left;
 }
 
 .temp {
@@ -73,7 +123,6 @@ body {
 	z-index: 2;
 	width: 80%;
 	padding: 20px;
-	text-align: center;
 	background-color: rgba(0,0,0,0.4);
 }
 
@@ -99,11 +148,110 @@ body {
 .faceRound {
 	margin-left: 100px;
 	margin-top: 100px;
-
+	float:left;
 	position: ;
 }
 
 .regularText {
-	display: inline;
-	width:500px;
+	text-align: justify;
+	font-family: 'Alegreya',serif;
+}
+.menu {
+	width:100%;
+	height: 75px;
+	background-color: rgb(34, 34, 34);
+}
+
+
+.subtitle {
+	text-align: center;
+	font-size: 50px;
+	font-family: typingFont;
+
+}
+
+.segment {
+	height:500px;
+}
+
+.leftSegment {
+	float: left;
+	width: 30%;
+}
+
+.rightSegment {
+	float: right;
+	background-color: #EA1646;
+	color: white;
+	width: 0%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	transition: 0.5s;
+
+}
+
+.slideRight {
+	width: 70%;
+}
+
+.leftSegment1 {
+	float: left;
+	background-color: #170420;
+	color: white;
+	width: 0%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	transition: 0.5s;
+
+}
+
+.rightSegment1 {
+	width:30%;
+	float: right;
+	height: 100%
+}
+
+.slideLeft {
+	width: 70%;
+}
+
+.content {
+	float: top;
+}
+
+.regularText {
+	margin-top: 50px;
+	margin-left: 40px;
+	margin-right: 40px;
+	font-size: 25px;
+
+}
+
+#seg2 {
+	background-color: white;
+
+}
+
+.footer {
+	background-color: rgb(34,34,34);
+	height: 150px;
+
+}
+
+.bottomTab {
+	text-align: center;
+	background-color: rgb(34, 34, 34);
+	font-family: helvetica;
+	font-size: 25px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	transition: 0.5s;
+}
+
+.footLinks {
+	color: white;
+	text-align: center;
+	padding-top: 100px;
 }

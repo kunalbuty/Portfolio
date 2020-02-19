@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Alegreya&display=swap');
+	</style>
 	<title>Kunal Buty</title>
-	<script src="functions.js"></script>
+	
 	<link rel="stylesheet" type="text/css" href="styles.css">
 
 </head>
@@ -10,57 +13,69 @@
 
 	<div class="banner" id="banner">
 		<div class="bannerText">
-			<h1 class="mainTitle">Welcome to my Website</h1>			
+			<h1 class="mainTitle" id="test">Kunal Buty: <span id="mainTitleVar"></span></h1> 
 		</div>
 	</div>
-	
-
-	
-	<table class="allTabs" id="tabs">
-		<tr>
-			<td class="tab">
-				<a>tab 1</a>
-			</td>
-			<td class="tab">
-				<a>tab 2</a>
-			</td>
-			<td class="tab">
-				<a>tab 3</a>
-			</td>
-			<td class="tab">
-				<a>tab 4</a>
-			</td>
-		</tr>
-	</table>
+	<div class="menu">
+		<table class="allTabs" id="tabs">
+			<tr>
+				<a href="index.html">
+					<td id="logo">
+						Kunal Buty</a>
+					</td>
+				</a>
+				<a>
+					<td class="tab">
+						Projects
+					</td>
+				</a>
+				<a>
+					<td class="tab">
+						About Me
+					</td>
+				</a>
+				<a>
+					<td class="tab">
+						Resume
+					</td>
+				</a>
+				<a>
+					<td class="tab">
+						Contact Me
+					</td>
+				</a>
+			</tr>
+		</table>
+	</div>
 	<div class="content">
-		<div class="segment1">
-			<img class="faceRound" src="Pictures/faceRound.png" height="300" width="300">
-			<p class="regularText">
-				The numbers refer to the Exercises at the bottom of each section of your zyBook. Complete these on paper and upload to Gradescope. Review the guidelines for homework on page "Grading and Assignments", under "Homework".  Justify all your answers.
-			</p>
+		<div class="segment">
+			<div class="leftSegment">
+				<img class="faceRound" src="Pictures/faceRound.png" height="300" width="300">
+			</div>
+			<div class="rightSegment" id="slider">
+				<h2 class="subtitle">Welcome To My Website!</h2>
+				<p class="regularText">
+					&emsp;&emsp; Hi! My name is Kunal, and since you're on my website, I'm sure you want to know more about me! I am currently a third year Computer Engineering student at The University of California, Irvine. Some of my hobbies include coding, gaming, soccer, and chess. I am currently in search of employment over the coming summer (June-September). 
+				</p>
+			</div>
+		</div>
+		<div class="segment" id="seg2">
+			<div class="leftSegment1" id="slider1">
+				<h2 class="subtitle">Welcome To My Website!</h2>
+				<p class="regularText">
+					&emsp;&emsp; Hi! My name is Kunal, and since you're on my website, I'm sure you want to know more about me! I am currently a third year Computer Engineering student at The University of California, Irvine. Some of my hobbies include coding, gaming, soccer, and chess. I am currently in search of employment over the coming summer (June-September). 
+				</p>
+			</div>
+			<div class="rightSegment1">
+				<p>t</p>
+			</div>
 		</div>
 	</div>
-	<div class="temp">
+	<div class="footer">
+		<div class="footLinks">
+			Kunal Buty &#x25cf; Class of 2021 &#x25cf; kbuty@uci.edu
+		</div>
 	</div>
-
-
-
-
-
-	<script type="text/javascript">
-		window_size = window.innerHeight-70 +"px";
-		document.getElementById("banner").style.height = window_size;
-
-		window.onscroll = function() {stick()};
-		var tabs = document.getElementById("tabs");
-		var sticky = tabs.offsetTop;
-		function stick() {
-			if (window.pageYOffset >= sticky) {
-			    tabs.classList.add("sticky")
-			  } else {
-			    tabs.classList.remove("sticky");
-			  }
-		}
-	</script>
 </body>
+<script src="functions.js"></script>
 </html>
