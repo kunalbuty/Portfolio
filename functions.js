@@ -24,7 +24,7 @@ function stick() {
 }
 
 function slide() {
-	if (window.pageYOffset >= 300) {
+	if (window.pageYOffset >= 100) {
 		//console.log(tabs.style.paddingTop);
 	    slider.classList.add("slideRight");
 	//	document.getElementById("content").style.paddingTop = allTabs.style.height;
@@ -34,7 +34,7 @@ function slide() {
 }
 
 function slide1() {
-	if (window.pageYOffset >= 800) {
+	if (window.pageYOffset >= 600) {
 		//console.log(tabs.style.paddingTop);
 	    slider1.classList.add("slideLeft");
 	//	document.getElementById("content").style.paddingTop = allTabs.style.height;
