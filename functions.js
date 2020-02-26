@@ -102,3 +102,47 @@ window.setInterval(function(){
 		typer();
 	}
 }, 150);
+
+var map = AmCharts.makeChart("mapdiv",{
+	type: "map",
+	theme: "dark",
+	projection: "mercator",
+	panEventsEnabled : true,
+	backgroundColor : "#75D3FF",
+	backgroundAlpha : 1,
+	zoomControl: {
+	zoomControlEnabled : true
+	},
+	dataProvider : {
+	map : "worldHigh",
+	getAreasFromMap : true,
+	areas :
+	[
+		{
+			"id": "US",
+			"showAsSelected": true
+		},
+		{
+			"id": "KE",
+			"showAsSelected": true
+		},
+		{
+			"id": "TZ",
+			"showAsSelected": true
+		},
+		{
+			"id": "IN",
+			"showAsSelected": true
+		}
+	]
+	},
+	areasSettings : {
+	autoZoom : true,
+	color : "#EA1646",
+	colorSolid : "rgb(34, 34, 34)",
+	selectedColor : "#170420",
+	outlineColor : "#000000",
+	rollOverColor : "#FFFFFF",
+	rollOverOutlineColor : "#000000"
+	}
+});

@@ -3,11 +3,16 @@
 <head>
 	<title>Kunal Buty</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
-
+	<script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
+	<script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
+	<script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
 </head>
-
 <body>
-	
+	<div class="banner" id="banner">
+		<div class="bannerText">
+			<h1 class="mainTitle" id="test">About Me</h1> 
+		</div>
+	</div>
 	<div class="menu">
 		<table class="allTabs" id="tabs">
 			<tr>
@@ -20,7 +25,7 @@
 				</td>
 					
 				<td id="tab">
-					<a href="projects.html">
+					<a href="index.html">
 						<div class="tab">
 							Home
 						</div>
@@ -29,14 +34,14 @@
 				<td id="tab">
 					<a href="aboutMe.html">
 						<div class="tab">
-							About Me
+							Projects
 						</div>
 					</a>
 				</td>
 				<td id="tab">
 					<a href="resume.html">
 						<div class="tab">
-							Projects
+							Resume
 						</div>
 					</a>
 				</td>
@@ -51,8 +56,10 @@
 		</table>
 	</div>
 	<div class="content">
-		<div class="pdf">
-			<iframe src="Files/Resume.pdf" width="50%" height="1300px"></iframe>
+		<div class="mapSegment">
+			<h2 class="title">My Story So Far</h2>
+			<div id="mapdiv" class="map"></div>
+
 		</div>
 	</div>
 	<div class="footer">

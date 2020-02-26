@@ -242,6 +242,7 @@ a {
 
 .content {
 	float: top;
+	width: 100%;
 }
 
 .regularText {
@@ -318,3 +319,23 @@ a {
 .icon:hover {
 	transform: scale(1.1);
 }
+
+.pdf {
+	text-align: center;
+	padding-top: 50px;
+	width:100%;
+	height: 100%;
+	background-color: #170420;
+}
+
+.map {
+	width: 1000px;
+	height: 450px;
+	margin:auto;
+}
+
+.title {
+	text-align: center;
+}
+
+
