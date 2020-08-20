@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html class="projectsPage">
+<head>
+	<title>My Projects</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<img src="https://img.icons8.com/cotton/64/000000/labyrinth.png"/>
+</head>
+<body>
+	<div>
+		<table class="allTabs1">
+			<tr>
+				<td id="logo">
+					<a href="index.html">
+						<div>
+							Kunal Buty
+						</div>
+					</a>
+				</td>
+					
+				<td id="tab">
+					<a href="index.html">
+						<div class="tab">
+							Home
+						</div>
+					</a>
+				</td>
+				<td id="tab">
+					<a href="aboutMe.html">
+						<div class="tab">
+							About Me
+						</div>
+					</a>
+				</td>
+				<td id="tab">
+					<a href="resume.html">
+						<div class="tab">
+							Resume
+						</div>
+					</a>
+				</td>
+				<td id="tab">
+					<a href="contactMe.html">
+						<div class="tab">
+							Contact Me
+						</div>
+					</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<script type="text/javascript">
+		const queryString = window.location.search;
+		const urlParams = new URLSearchParams(queryString);
+		const myParam = urlParams.has('noExist');
+		if(myParam) {
+			console.log("doesnt exist")
+			//console.log myParam;
+		}
+	</script>
+	<h1 class="projectsTitle">Take a look at what I've been working on!<br><br></h1>
+	<table class="projectTabs">
+		<tr class="oddProjectTabs">
+			<!-- <p>I am still working on this website, and will be adding projects to my website. Come back soon to see what I've been up to!</p> -->
+
+			<td class="projectBoxes">
+				<a href="resume.html">
+					<div>
+						<h2>Creating a Linux subsystem on Windows</h2>
+						<img class="linkIcon" src="Pictures/Icons/terminal.svg">
+						<p class="regularText">Navigate through your Windows Files as you would on linux!</p>
+					</div>
+				</a>
+			</td>
+			<td class="projectBoxes">
+				<a href="aboutMe.html">
+					<div>
+						<h2>Creating a Maze Building Algorithm</h2>
+						<img class="linkIcon" src="https://img.icons8.com/cotton/64/000000/labyrinth.png"/>
+						<p class="regularText">I designed an algorithm to randomly generate a maze!</p>
+					</div>
+				</a>
+			</td>
+			<td class="projectBoxes">
+				<a href="projects.html">
+					<div>
+						<h2>Post Drive Analysis of A Solar Car</h2>
+						<img class="linkIcon" src="Pictures/projects.png">
+						<p class="regularText">After two years of working on the UCI Solar Car, I have developed an analysis app to visualize our data!</p>
+					</div>
+				</a>
+			</td>
+			<td class="projectBoxes">
+				<a href="contactMe.html">
+					<div>
+						<h2>Creating a Chess AI</h2>
+						<img class="linkIcon" src="Pictures/contact.png">
+						<p class="regularText">I built my own chess engine! Is it smart though? find out here!</p>
+					</div>
+				</a>
+			</td>
+		</tr>
+		<tr class="evenProjectTabs">
+			<td class="evenProjectBoxes">
+				<a href="resume.html">
+					<div>
+						<h2>Project</h2>
+						<img class="linkIcon" src="Pictures/resume.png">
+						<p class="regularText">Want to know more about my career? Take a look at some of my professional skills and accomplishments here!</p>
+					</div>
+				</a>
+			</td>
+			<td class="evenProjectBoxes">
+				<a href="aboutMe.html">
+					<div>
+						<h2>Project</h2>
+						<img class="linkIcon" src="Pictures/id.png">
+						<p class="regularText">There's a lot more to me than my resume... Check out some of my hobbies, where I've lived, and more!</p>
+					</div>
+				</a>
+			</td>
+			<td class="evenProjectBoxes">
+				<a href="projects.html">
+					<div>
+						<h2>Project</h2>
+						<img class="linkIcon" src="Pictures/projects.png">
+						<p class="regularText">Want to find out more about what kinds of projects I've been working on? Check out my latest creations!</p>
+					</div>
+				</a>
+			</td>
+			<td class="evenProjectBoxes">
+				<a href="contactMe.html">
+					<div>
+						<h2>Project</h2>
+						<img class="linkIcon" src="Pictures/contact.png">
+						<p class="regularText">Like what you see? Or do you just want to know more? Shoot me an email and we can talk more!</p>
+					</div>
+				</a>
+			</td>
+		</tr>
+	</table>
+	<div class="footer">
+		<div class="">
+			<table class="icons">
+				<tr>
+					
+					<td>
+						<a href="https://www.github.com/kunalbuty">
+							<img class="icon" src="Pictures/github.png" height="50" width="50">
+						</a>
+					</td>
+					<td>
+						<a href="https://www.facebook.com/kunalbuty">
+							<img class="icon" src="Pictures/fb.png" height="50" width="50">
+						</a>
+					</td>
+					<td>
+						<a href="https://www.linkedin.com/in/kunal-buty-782080155/">
+							<img class="icon" src="Pictures/linkedin.png" height="50" width="50">
+						</a>
+					</td>
+					<td>
+						<a href="https://www.instagram.com/kunalbuty/">
+							<img class="icon" src="Pictures/instagram.png" height="50" width="50">
+						</a>
+					</td>
+					<td>
+						<a href="https://www.twitter.com/kunalbuty/">
+							<img class="icon" src="Pictures/twitter.png" height="50" width="50">
+						</a>
+					</td>
+				</tr>
+			</table>
+			<p class="footLinks">
+			Kunal Buty &#x25cf; Class of 2021 &#x25cf; kbuty@uci.edu
+
+		</div>
+	</div>
+</body>
+</html>
